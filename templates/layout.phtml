@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Exercice Routeur MVC</title>
+	</head>
+	<body>
+
+		<?php
+			if($route === "connexion")
+            {
+                require "templates/connexion.phtml";
+            }
+            else if($route === "inscription")
+            {
+                require "templates/inscription.phtml";
+            }
+            else if($route === "personalSpace")
+            {
+                require "templates/personalSpace.phtml";
+            }
+            else if($route === "404")
+            {
+                require "templates/404.phtml";
+            }
+            else if($route === "home")
+            {
+                require "templates/home.phtml";
+            }
+            else 
+            {
+            	require "templates/home.phtml";
+            };
+		?>
+		
+	</body>
+</html>
